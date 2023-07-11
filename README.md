@@ -148,7 +148,7 @@ Contoh akan menghapus versi 0.3.1
 rm -rf cess-nodeadm-0.3.1 v0.3.1.tar.gz
 ```
 
-#### Setelah itu mulai kembali dari langkah [Set Config]()
+#### Setelah itu mulai kembali dari langkah [Set Config](https://github.com/Megumiiiiii/storage-node/blob/main/README.md#set-config)
 
 #
 
