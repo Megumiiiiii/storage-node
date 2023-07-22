@@ -48,7 +48,7 @@
 ### Buka Port
 
 ```
-ufw allow ssh; ufw allow 4001; ufw enable
+sudo ufw allow ssh; sudo ufw allow 4001; sudo ufw allow 15001; sudo ufw enable
 ```
 
 ### Install Docker ( Skip kalo udah )
