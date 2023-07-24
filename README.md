@@ -150,6 +150,14 @@ rm -rf cess-nodeadm-0.3.1 v0.3.1.tar.gz
 
 #### Setelah itu mulai kembali dari langkah [Set Config](https://github.com/Megumiiiiii/storage-node/blob/main/README.md#set-config)
 
+## ⚠️ Jika ingin menghapus node ⚠️
+
+```
+cess down
+cess purge
+docker rmi cesslab/cess-bucket
+```
+
 #
 
 <div id="header" align="center">
