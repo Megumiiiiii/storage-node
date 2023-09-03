@@ -67,7 +67,7 @@ sudo apt-get update && sudo apt install jq git && sudo apt install apt-transport
 mkdir -p /opt/cess
 git clone https://github.com/CESSProject/cess-nodeadm
 cd cess-nodeadm
-git chekout tags/v0.4.2
+git checkout tags/v0.4.2
 ./install.sh
 ```
 
