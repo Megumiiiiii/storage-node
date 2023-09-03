@@ -58,16 +58,16 @@ sudo apt update; sudo apt upgrade -y
 ```
 
 ```
-sudo apt-get update && sudo apt install jq git && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt-get install docker-compose-plugin
+sudo apt-get update && sudo apt install jq git && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
 ### Install CESS
 
 ```
-mkdir -p /cess
-wget https://github.com/CESSProject/cess-nodeadm/archive/v0.3.3.tar.gz
-tar -xvf v0.3.3.tar.gz
-cd cess-nodeadm-0.3.3/
+mkdir -p /opt/cess
+git clone https://github.com/CESSProject/cess-nodeadm
+cd cess-nodeadm
+git chekout tags/v0.4.2
 ./install.sh
 ```
 
@@ -87,9 +87,9 @@ cess config set
 
 - Lalu paste pharse dari wallet kedua
 
-- Ketik `/cess`
+- Ketik `/opt/cess`
 
-- Terkahir, isi dengan `1000`
+- Terkahir, isi dengan `100`
 
 ## Start Node
 
@@ -145,7 +145,7 @@ cess purge
 
 Contoh akan menghapus versi 0.3.1
 ```
-rm -rf cess-nodeadm-0.3.1 v0.3.1.tar.gz
+rm -rf cess-nodeadm
 ```
 
 #### Setelah itu mulai kembali dari langkah [Set Config](https://github.com/Megumiiiiii/storage-node/blob/main/README.md#set-config)
@@ -153,9 +153,8 @@ rm -rf cess-nodeadm-0.3.1 v0.3.1.tar.gz
 ## ⚠️ Jika ingin menghapus node ⚠️
 
 ```
-cess down
-cess purge
-docker rmi cesslab/cess-bucket
+cess down; cess purge
+docker rmi cesslab/cess-bucket; docker rmi cesslab/cess-chain; docker rmi cesslab/config-gen; docker rmi containrrr/watchtower
 ```
 
 #
