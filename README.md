@@ -81,8 +81,6 @@ cess config set
 
 - Ketik `storage` kemudian enter
 
-- Masukan IP VPS
-
 - Paste address dari wallet pertama
 
 - Lalu paste pharse dari wallet kedua
