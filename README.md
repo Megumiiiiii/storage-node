@@ -152,7 +152,7 @@ cd cess-nodeadm
 git checkout tags/SESUAI_VERSITERBARU_JIKA_SUDAH_ADA
 ```
 
-#### Setelah itu mulai kembali dari langkah [Set Config](https://github.com/Megumiiiiii/storage-node/blob/main/README.md#set-config)
+#### Setelah itu mulai kembali dari langkah [Set Config](https://github.com/Megumiiiiii/storage-node#set-config)
 
 ## ⚠️ Jika ingin menghapus node ⚠️
 
