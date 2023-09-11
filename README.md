@@ -78,6 +78,10 @@ git checkout tags/v0.4.4
 - Paste ini
 
 ```
+cess profile testnet
+```
+
+```
 cess config set
 ```
 
